@@ -1,0 +1,7 @@
+<mtapp:setting
+    id="sanitizeblogs_sanitizespec"
+    label="<__trans phrase="Allowed Tags">"
+    hint='<__trans phrase="List of allowed HTML tags and tag attributes. Tags should be comma-separated.<br/>Tag attributes should be space-separated and listed after the tag which they can be used with. eg. &quot;a href,em,strong&quot;<br/>(Functions in same manner as, but is distinct from, the <a href="[_1]">GlobalSanitizeSpec</a> configuration setting.)" params="http://www.movabletype.org/config/globalsanitizespec">'
+    show_hint="1">
+    <input type="text" size="70" name="sanitizeblogs_sanitizespec" id="sanitizeblogs_sanitizespec" value="<mt:var name="sanitizeblogs_sanitizespec" escape="html">" />
+</mtapp:setting>

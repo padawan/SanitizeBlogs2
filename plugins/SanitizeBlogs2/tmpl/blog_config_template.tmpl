@@ -1,0 +1,15 @@
+<mtapp:setting
+    id="sanitizeblogs_blog_sanitizespec"
+    label="<__trans phrase="Allowed tags for this blog">"
+    hint='<__trans phrase="List of allowed HTML tags and tag attributes for this blog. Tags should be comma-separated.<br/>Tag attributes should be space-separated and listed after the tag which they can be used with. eg. &quot;a href,em,strong&quot;<br/>(Functions in same manner as, but is distinct from, the <a href="[_1]">GlobalSanitizeSpec</a> configuration setting.)" params="http://www.movabletype.org/config/globalsanitizespec">'
+    show_hint="1">
+    <input type="text" size="90" name="sanitizeblogs_blog_sanitizespec" id="sanitizeblogs_blog_sanitizespec" value="<mt:var name="sanitizeblogs_blog_sanitizespec" escape="html">" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="sanitizeblogs_blog_dontsanitize"
+    label="<__trans phrase="Do not sanitize this blog">"
+    hint='<__trans phrase="If checked, entries on this blog will <em>not</em> be sanitized.">'
+    show_hint="1">
+    <input type="checkbox" name="sanitizeblogs_blog_dontsanitize" id="sanitizeblogs_blog_dontsanitize" value="1"<mt:if name="sanitizeblogs_blog_dontsanitize"> checked="checked"</mt:if> />
+</mtapp:setting>
