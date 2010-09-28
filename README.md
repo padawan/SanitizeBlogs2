@@ -1,6 +1,4 @@
-# SanitizeBlogs2, a plugin for Movable Type
-
-**SanitizeBlogs2** is a variant of the [mt-plugin-SanitizeBlogs](http://github.com/sixapart/mt-plugin-SanitizeBlogs) by Six Apart. While the Six Apart version sanitizes blogs based upon a blog URL prefix (useful for blogs published under the Community Platform), the present variant is more useful for a blog farm where you want all blogs to be sanitized with the ability to refine or prevent the sanitization for selected blogs.
+**SanitizeBlogs 2** is a variant of the [mt-plugin-SanitizeBlogs](http://github.com/sixapart/mt-plugin-SanitizeBlogs) by Six Apart. While the Six Apart version sanitizes blogs based upon a blog URL prefix (useful for blogs published under the Community Platform), the present variant is more useful for a blog farm where you want all blogs to be sanitized with the ability to refine or prevent the sanitization for selected blogs.
 
 ## Overview
 
@@ -12,7 +10,8 @@ A typical use case of this plugin is to cleanup the mess introduced by authors c
 
 ## Requirements
 
-* MT 4.x (works with MT5)
+* MT 4.x
+* MT 5.x
 
 
 ## Features
@@ -48,16 +47,17 @@ If the system list is empty, then only blogs that have a list defined at their l
 
 ## Installation
 
-1. Download <a href="http://github.com/padawan/mt-plugin-SanitizeBlogs" onClick="javascript: pageTracker._trackPageview('/software/SanitizeBlogs.github');">SanitizeBlogs</a>.
-1. Uncompress and move the SanitizeBlogs directory to the MT `plugins` directory. [More in-depth plugin installation instructions](http://tinyurl.com/easy-plugin-install).
+1. Download <a href="http://github.com/padawan/SanitizeBlogs2" onClick="javascript: pageTracker._trackPageview('/software/SanitizeBlogs.github');">SanitizeBlogs2</a>.
+1. Uncompress and move the SanitizeBlogs2 directory to the MT `plugins` directory. [More in-depth plugin installation instructions](http://tinyurl.com/easy-plugin-install).
 1. In the plugin preferences at the system-level enter a list of allowed tags to apply by default to all blogs.
 Optionnaly, refine this list or exclude specific blogs at the blog-level.
 
 
-## Note
+## Notes
 
-Installing both variants of the SanitizeBlogs plugins on the same MT installation has not been tested. Their plugin keys are different, so their respective preferences will not clash, however they will act concurrently in an unpredictable order if you define a blog-level list in SanitizeBlogs2.
+Installing both variants of the Six Apart SanitizeBlogs and Ubiquitic SanitizeBlogs2 plugins on the same MT installation has not been tested. Their plugin keys are different, so their respective preferences will not clash, however they will act concurrently in an unpredictable order on blogs sanitized by SanitizeBlogs if you define a blog-level list in SanitizeBlogs2. You may want to leave the SanitizeBlogs2 system-level list empty, and define a list on selected blogs.
 
+Ce plugin parle français. ;-)
 
 ## Credits
 
