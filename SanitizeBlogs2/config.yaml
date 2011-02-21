@@ -1,0 +1,33 @@
+name: <__trans phrase="SanitizeBlogs2">
+id: SanitizeBlogs2
+key: SanitizeBlogs2
+author_link: http://ubiquitic.com/
+plugin_link: http://ubiquitic.com/software/sanitizeblogs-movable-type-plugin.html
+author_name: Ubiquitic
+description: <__trans phrase="Strip unwanted HTML tags from entries and pages created in blogs.">
+version: 1.2.1
+l10n_class: SanitizeBlogs2::L10N
+
+settings:
+    sanitizeblogs_sanitizespec:
+        Default: ''
+    sanitizeblogs_blog_sanitizespec:
+        Scope: blog
+        Default: ''
+    sanitizeblogs_blog_sanitize_javascript_events:
+        Scope: blog
+        Default: ''
+    sanitizeblogs_blog_dontsanitize:
+        Scope: blog
+        Default: 0
+
+system_config_template: sys_config_template.tmpl
+blog_config_template: blog_config_template.tmpl
+
+callbacks:
+    cms_pre_save.entry:
+        code: $SanitizeBlogs2::SanitizeBlogs2::_sanitize_entry
+        priority: 10
+    api_pre_save.entry:
+        code: $SanitizeBlogs2::SanitizeBlogs2::_sanitize_entry
+        priority: 10
