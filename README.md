@@ -14,6 +14,7 @@ Also, and <em>contrary to the MT sanitization default behavior</em>, SanitizeBlo
 
 * MT 4.x
 * MT 5.x
+* Melody 1.x
 
 
 ## Features
@@ -68,7 +69,8 @@ Ce plugin parle français. ;-)
 
 ## Version history
 
-Current: 1.2.1 — Introduces the white-listing of javascript events.
+- 1.2.2 (Current): Properly sanitize pages in addition to entries.
+- 1.2.1: Introduces the white-listing of javascript events.
 
 
 ## Credits
